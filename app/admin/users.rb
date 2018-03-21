@@ -1,8 +1,8 @@
-ActiveAdmin.register Province do
+ActiveAdmin.register User do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :pstRate, :getRate, :hstRate
+# permit_params :list, :of, :attributes, :on, :model
 #
 # or
 #
