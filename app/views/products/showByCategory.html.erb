@@ -1,0 +1,8 @@
+<%= form_tag some_route_path do %>
+<p>Search by category: <%= select_tag :category, options_from_collection_for_select(@categories, 'id', 'description') %>
+  <%= submit_tag "Search" %>
+  <% end %>
+
+<%= render partial: 'product',
+           collection: @products,
+           locals: {show_details_link: true} %>
