@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   root to: 'products#index'
+
+  resources :searches
   post 'products/index', to: 'products#showByCategory', as: 'catsearch'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
