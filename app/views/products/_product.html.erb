@@ -2,4 +2,12 @@
   <%= product.name %>
    <%= product.description %>
    <%= product.pricePerUnit %>
+
+  <% if show_details_link %>
+    <%= link_to 'View Details', product %>
+  <% end %>
+
+
+
+
 </div>
