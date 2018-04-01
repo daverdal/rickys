@@ -1,9 +1,47 @@
-<header>
-  <nav>
-    <ul>
-      <li><%= link_to 'Home', '/' %></li>
-      <li><%= link_to 'About', 'about' %></li>
+<!DOCTYPE html>
+<html>
+<head>
+
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <title>Ricky's Delivery Service</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to 'Home', '/' %>
+      </li>
+
+      <li class="nav-item">
+      <%= link_to 'About', 'about' %>
+    </li>
+      <li class="nav-item">
+        <%= link_to "AdvanceSearch", new_search_path %>
+      </li>
 
     </ul>
-  </nav>
-</header>
+
+
+  </div>
+</nav>
+<%= image_tag("tpb.jpg", :alt => "rss feed") %>
