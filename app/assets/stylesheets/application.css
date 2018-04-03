@@ -1,4 +1,34 @@
 @import "bootstrap";
+
+nav {
+    width:400px;
+    margin: 0px auto;
+    color:#36454f;
+    height:40px;
+    line-height:40px;
+    box-shadow:1px 0px, 2px #333, -1px -1px 2px #333;
+    text-align:center;
+}
+
+
+nav ul, nav ul li{
+    display: inline;
+    margin:0px auto;
+    padding: 0px;
+}
+
+nav ul a{
+    font-size: .85em;
+    display: inline-block;
+    color:#FFF;
+    text-decoration: none;
+    height:20px;
+    padding:0px 15px;
+
+}
+
+
+
 /*!
  * Bootswatch v4.0.0+1
  * Homepage: https://bootswatch.com
