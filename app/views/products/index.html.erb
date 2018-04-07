@@ -1,8 +1,5 @@
-<%= form_tag 'catsearch_path' do %>
-<p>Search by category: <%= select_tag :category, options_from_collection_for_select(@categories, 'id', 'description') %>
-  <%= submit_tag "Search" %>
-  <% end %>
-<hr>
+
+
 
 <div class="container">
   <!-- Example row of columns -->
@@ -14,7 +11,8 @@
 
   </div>
 </div>
+<%= paginate @products %>
 
-
+<%= render partial: 'cart' %>
 <br />
 You have visited this page <%= @count %> times.

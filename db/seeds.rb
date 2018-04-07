@@ -9,10 +9,14 @@
 
 
 #Province.create(name: 'NWT', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
-Province.create(name: 'Manitoba', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
-Province.create(name: 'Saskatchewan', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
-Province.create(name: 'Quebec', gstRate: 0, pstRate: 0, hstRate: 0.06)
-Province.create(name: 'Nova Scotia', gstRate: 0.03, pstRate: 0.05, hstRate: 0)
-Province.create(name: 'PEI', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
-Province.create(name: 'New Brunswick', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
-Province.create(name: 'Newfoundland', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
+#Province.create(name: 'Manitoba', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
+#Province.create(name: 'Saskatchewan', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
+#Province.create(name: 'Quebec', gstRate: 0, pstRate: 0, hstRate: 0.06)
+#Province.create(name: 'Nova Scotia', gstRate: 0.03, pstRate: 0.05, hstRate: 0)
+#Province.create(name: 'PEI', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
+#Province.create(name: 'New Brunswick', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
+#Province.create(name: 'Newfoundland', gstRate: 0.05, pstRate: 0.05, hstRate: 0)
+#Category.create(description: 'Jalapinos')
+Product.create(name: 'Corn', description: 'Its yellow and good', pricePerUnit: 7.56,
+               costPerUnit: 3.45, qoh: 45, category_id: 2)
+

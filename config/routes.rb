@@ -4,13 +4,19 @@ Rails.application.routes.draw do
 
   resources :searches
   post 'products/index', to: 'products#showByCategory', as: 'catsearch'
+  get 'products/addToCart', to: 'products#addToCart', as: 'addtocart'
+
+  get '/cart', to: 'order_items#index'
+  resources :order_items, path: '/cart/items'
+
+
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :about
   resources :order
   resources :category
-  resources :order_item
+
   resources :products
   resources :province
   resources :user

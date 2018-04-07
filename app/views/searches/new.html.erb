@@ -8,7 +8,7 @@
 
   <div class="field">
     <%= s.label :category %><br />
-    <%= s.select :category, options_for_select(@categories), :include_blank => true%>
+    <%= s.select :category, options_from_collection_for_select(@categories, "id", "description"), :include_blank => true%>
   </div>
 
   <div class="field">
